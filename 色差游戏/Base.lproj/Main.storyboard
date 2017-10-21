@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextCondensed.ttc">
+            <string>AvenirNextCondensed-BoldItalic</string>
+            <string>AvenirNextCondensed-HeavyItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Game Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiF-5B-KLa">
+                                <rect key="frame" x="67.5" y="166" width="240" height="85"/>
+                                <color key="backgroundColor" red="0.95434378549999999" green="1" blue="0.79271650829999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-BoldItalic" family="Avenir Next Condensed" pointSize="36"/>
+                                <state key="normal" title="Normal mode">
+                                    <color key="titleColor" red="0.85000002379999995" green="0.088407948347442741" blue="0.58201805632526782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="normalMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDf-ol-Fw8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emk-ox-tvZ">
+                                <rect key="frame" x="67.5" y="416" width="240" height="85"/>
+                                <color key="backgroundColor" red="1" green="0.85094021269999998" blue="0.1146966698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-HeavyItalic" family="Avenir Next Condensed" pointSize="36"/>
+                                <state key="normal" title="Ranking list">
+                                    <color key="titleColor" red="0.85000002379999995" green="0.088407948350000001" blue="0.58201805630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rankingList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Js6-UD-gwV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hH5-fW-Uae">
+                                <rect key="frame" x="67.5" y="291" width="240" height="85"/>
+                                <color key="backgroundColor" red="0.78920917209999997" green="1" blue="0.138593621" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="9cl-AN-eGb"/>
+                                    <constraint firstAttribute="width" constant="240" id="qZE-DO-ELk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-BoldItalic" family="Avenir Next Condensed" pointSize="36"/>
+                                <state key="normal" title="Time pattern">
+                                    <color key="titleColor" red="0.85000002379999995" green="0.088407948350000001" blue="0.58201805630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="timepattern:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xgt-zr-FHW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61238834342277937" green="0.73353873158363625" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="emk-ox-tvZ" firstAttribute="centerX" secondItem="hH5-fW-Uae" secondAttribute="centerX" id="EVQ-oC-ToE"/>
+                            <constraint firstItem="emk-ox-tvZ" firstAttribute="height" secondItem="hH5-fW-Uae" secondAttribute="height" id="LFG-g4-fiH"/>
+                            <constraint firstItem="emk-ox-tvZ" firstAttribute="width" secondItem="hH5-fW-Uae" secondAttribute="width" id="OXj-D2-A66"/>
+                            <constraint firstItem="hH5-fW-Uae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XMe-a3-bi0"/>
+                            <constraint firstItem="hH5-fW-Uae" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZDA-w0-Xde"/>
+                            <constraint firstItem="fiF-5B-KLa" firstAttribute="centerX" secondItem="hH5-fW-Uae" secondAttribute="centerX" id="Zfk-N3-1Hi"/>
+                            <constraint firstItem="emk-ox-tvZ" firstAttribute="top" secondItem="hH5-fW-Uae" secondAttribute="bottom" constant="40" id="k4e-Ca-Emf"/>
+                            <constraint firstItem="hH5-fW-Uae" firstAttribute="top" secondItem="fiF-5B-KLa" secondAttribute="bottom" constant="40" id="mQZ-QK-fkl"/>
+                            <constraint firstItem="fiF-5B-KLa" firstAttribute="width" secondItem="hH5-fW-Uae" secondAttribute="width" id="nWD-Ti-HTA"/>
+                            <constraint firstItem="fiF-5B-KLa" firstAttribute="height" secondItem="hH5-fW-Uae" secondAttribute="height" id="xlQ-ud-mXU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="normal" destination="fiF-5B-KLa" id="hrW-pO-dhw"/>
+                        <outlet property="rankingList" destination="emk-ox-tvZ" id="pDn-M7-CSS"/>
+                        <outlet property="time" destination="hH5-fW-Uae" id="p4w-ov-HiB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488.80000000000001" y="350.37481259370315"/>
+        </scene>
+    </scenes>
+</document>

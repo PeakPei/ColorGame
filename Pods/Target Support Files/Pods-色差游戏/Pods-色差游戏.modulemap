@@ -1,0 +1,6 @@
+framework module Pods_____ {
+  umbrella header "Pods-色差游戏-umbrella.h"
+
+  export *
+  module * { export * }
+}
